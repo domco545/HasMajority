@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
-namespace HasMajorityFaster
+namespace HasMajorityDictionary
 {
     class Program
     {
@@ -31,20 +31,31 @@ namespace HasMajorityFaster
 
         public bool HasMajority(int[] arr) 
         {
-            Lookup<int, int> lookup = (Lookup<int, int>)arr.ToLookup(x => x, x=> x);
+            Dictionary<int, int> counter = new Dictionary<int, int>();
 
-            foreach (var x in lookup)
+            foreach (var value in arr)
             {
-                var count = x.Count();
-                Console.WriteLine($"Found {x.Key}, {count} times");
-                if (count > arr.Length/2)
+                if (counter.ContainsKey(value))
                 {
-                    Console.WriteLine($"Found majority {x.Key} presented {count} times");
+                    counter[value]++;
+                }
+                else
+                {
+                    counter.Add(value, 1);
+                }
+            }
+
+            foreach (var value in counter.Keys)
+            {
+                Console.WriteLine($"Found {value}, {counter[value]} times");
+
+                if (counter[value] > arr.Length/2)
+                {
+                    Console.WriteLine($"Found majority {value} appeared {counter[value]}");
                     return true;
                 }
-            } 
-
-            Console.WriteLine("no majority");
+            }
+            Console.WriteLine("No majority found");
             return false;
         }
     }

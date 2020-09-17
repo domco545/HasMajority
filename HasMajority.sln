@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HasMajority", "HasMajority\HasMajority.csproj", "{2F545AF3-3012-49B5-9163-B54C4FE400A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasMajorityFaster", "HasMajorityFaster\HasMajorityFaster.csproj", "{A91EB097-72CA-4F51-BA57-DC5E603691C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HasMajorityFaster", "HasMajorityFaster\HasMajorityFaster.csproj", "{A91EB097-72CA-4F51-BA57-DC5E603691C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HasMajorityDictionary", "HasMajorityDictionary\HasMajorityDictionary.csproj", "{6F213092-C63A-411F-9009-4C55EF8FC8CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A91EB097-72CA-4F51-BA57-DC5E603691C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A91EB097-72CA-4F51-BA57-DC5E603691C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A91EB097-72CA-4F51-BA57-DC5E603691C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F213092-C63A-411F-9009-4C55EF8FC8CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F213092-C63A-411F-9009-4C55EF8FC8CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F213092-C63A-411F-9009-4C55EF8FC8CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F213092-C63A-411F-9009-4C55EF8FC8CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
